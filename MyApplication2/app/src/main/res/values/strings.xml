@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">By SinhDinh</string>
+    <string-array name="spin_nam_hoc">
+        <item>Nam Nhat</item>
+        <item>Nam Hai</item>
+        <item>Nam Ba</item>
+        <item>Nam Bon</item>
+    </string-array>
+</resources>

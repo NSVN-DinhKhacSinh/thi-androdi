@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text="Thêm lớp"
+        />
+
+        <EditText
+            android:id="@+id/edTenLop"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:hint="Tên lớp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:id="@+id/edmMoTa"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="10dp"
+            android:hint="Mô tả"
+            android:textColor="@color/black"
+            />
+        <Button
+            android:id="@+id/btAddClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Them"/>
+        <Button
+            android:id="@+id/btUpdateClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update"/>
+        <Button
+            android:id="@+id/btDeleteClass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Danh Sach Lop"
+            android:layout_marginLeft="50pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:text="Ten Lop"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Mo ta"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rec_list_lop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+</LinearLayout>
